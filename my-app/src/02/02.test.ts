@@ -7,6 +7,7 @@ beforeEach(() => {
     title: "New York",
     houses: [
       {
+        id: 0,
         buildedAt: 2012,
         repaired: false,
         address: {
@@ -17,6 +18,7 @@ beforeEach(() => {
         },
       },
       {
+        id: 1,
         buildedAt: 2008,
         repaired: false,
         address: {
@@ -27,6 +29,7 @@ beforeEach(() => {
         },
       },
       {
+        id: 2,
         buildedAt: 2020,
         repaired: false,
         address: {
@@ -65,7 +68,7 @@ beforeEach(() => {
   };
 });
 
-test.skip("city should contains 3 houses", () => {
+test("city should contains 3 houses", () => {
   expect(city.houses.length).toBe(3);
 
   expect(city.houses[0].buildedAt).toBe(2012);
